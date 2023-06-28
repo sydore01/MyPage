@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>SydneyDore의 걸작 컨설팅</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+            background-color: purple;
+            color: white;
+
+            height: 250px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* 이 네줄 같이 다님 */
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1606247357835-d27fe83fc6a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .mytitle>button {
+            width: 250px;
+            height: 50px;
+
+            background-color: transparent;
+
+            border: 1px solid white;
+            color: white;
+            /* solid는 실선이라는 뜻 */
+            border-radius: 50px;
+
+            margin-top: 20px;
+        }
+
+        .mytitle>button:hover {
+            border: 2px solid white;
+            /* hover는 마우스 갖다대면 테두리 굵어짐 */
+        }
+
+        .mycomment {
+            color: grey;
+        }
+
+        .mycards {
+            width: 1200px;
+            margin: 20px auto 20px auto
+        }
+
+        .mypost {
+            width: 500px;
+            margin: 20px auto 20px auto;
+            padding: 20px 20px 20px 20px;
+
+            box-shadow: 0px 0px 3px 0px gray;
+        }
+
+        .mybtn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 20px;
+        }
+
+        .mybtn>button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>SydneyDore의 걸작 컨설팅</h1>
+        <button>영화 기록하기</button>
+    </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">영화URL</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">코멘트</label>
+        </div>
+        <div class="mybtn">
+            <button type="button" class="btn btn-dark">기록하기</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+    </div>
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.namu.wiki/i/wavbYsNgMzAeHOpD7MDDL9xYbxhkIi_xvNKEjiIVrUUnxmkY3peOAjF4NP5RDwgpIwse-LZfQooGtlP2YUBK_g.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">나의 아저씨(My Mister)</h5>
+                        <p class="card-text">2018년작/관람등급15+/넷플릭스</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">시드니도어가 고등학교를 졸업하고 인생 처음으로 완주한 드라마이자 최애 드라마.
+                            여러모로 뾰족해졌던 도어를 웃고 울게 해주며 마음을 보듬어주었던 최고의 힐링 드라마이다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGtNox5McDUpxLQeSVTwDwqWy7oEFtf_TryJCZWB-Ds8nWZLct"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Unforgivable</h5>
+                        <p class="card-text">2021년작/관람등급15+/넷플릭스</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">시작부터 뚜렷한 피해자vs가해자 구도를 뒤엎고 새로운 피해자와 가해자가 생기는데, 가슴 아픈 진실이 드러나며 모든 일차원적인 관계
+                            구도를 무너뜨린다. 이 작품에서는 모두가 피해자이며 동시에 가해자다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.themoviedb.org/t/p/original/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter and the Half-Blood Prince</h5>
+                        <p class="card-text">2009년작/관람등급12+/웨이브</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">시드니도어의 어린 시절과 청소년기를 지배했던 희대의 걸작 "해리포터". 그중 시리즈 세계관의 두 주축이 되는 덤블도어와 스네이프를
+                            사랑한다면 고민없이 이 영화가 시리즈 통틀어 최애일 수 밖에 없다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://asianwiki.com/images/e/e5/The_Glory-p2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">더글로리(The Glory)</h5>
+                        <p class="card-text">2022년작/관람등급15+/넷플릭스</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">평소 학폭물을 좋아하지 않는 시드니도어는 유행에 이끌려 시청하게 되었고 이내 감탄을 멈출 수 없었다. 이렇게 섬세하고 아름다운
+                            대사라니.. 이렇게 통쾌하고 가슴 저리는 이야기라니..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://asianwiki.com/images/e/e5/The_Glory-p2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">더글로리(The Glory)</h5>
+                        <p class="card-text">2022년작/관람등급15+/넷플릭스</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">평소 학폭물을 좋아하지 않는 시드니도어는 유행에 이끌려 시청하게 되었고 이내 감탄을 멈출 수 없었다. 이렇게 섬세하고 아름다운
+                            대사라니.. 이렇게 통쾌하고 가슴 저리는 이야기라니..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
